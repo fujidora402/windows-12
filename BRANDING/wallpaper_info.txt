@@ -1,0 +1,10 @@
+# Noah Branding Assets
+
+This folder should contain custom branding for the Noah development preview:
+
+- wallpaper.png - Custom Noah wallpaper
+- logo.png - Noah logo
+- theme.xml - Custom theme configuration
+- splash.bmp - Boot splash screen
+
+Place custom wallpaper and branding images here to be included in the customized ISO.
