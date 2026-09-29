@@ -1,0 +1,15 @@
+# install.wim Information
+
+The install.wim file contains the Windows installation image.
+
+## To modify install.wim:
+
+1. Extract: dism /Mount-Wim /WimFile:"install.wim" /Index:1 /MountDir:"C:\WinMount"
+2. Customize files, registry, etc.
+3. Commit: dism /Unmount-Wim /MountDir:"C:\WinMount" /Commit
+
+## To update version strings in install.wim:
+
+- Edit: C:\WinMount\Windows\System32\winver.exe resources
+- Modify: registry hives (SYSTEM, SOFTWARE)
+- Update: build metadata
